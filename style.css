@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  font-display: swap;
+}
+.header_container {
+  display: inline-block;
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 60px;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+}
+.header_logo > img {
+  width: 210px;
+}
+.toggle_button_container {
+  display: none;
+  font-size: 20px;
+}
+.header_menu {
+  display: block;
+}
+.header_menu > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.header_menu > ul > li {
+  padding: 0px 20px;
+  color: lightslategrey;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header_menu > ul > li:hover {
+  cursor: pointer;
+  color: black;
+}
+.signup {
+  background-color: #0694a2;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #0694a2;
+  padding: 12px 15px;
+  outline: none;
+  margin: 0px 30px;
+}
+.signup {
+  cursor: pointer;
+  background-color: rgba(4, 116, 129, 1);
+}
+.fee_trail_container {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(249, 250, 251, 1);
+}
+.free_trail {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.trail_content {
+  box-sizing: border-box;
+  width: 50%;
+  margin-top: 100px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+.trail_content > h3 {
+  color: darkgrey;
+  margin-bottom: 20px;
+}
+.trail_content > h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1;
+}
+.trail_content > h1 > span {
+  color: #d61f69;
+}
+.trail_content > p {
+  font-size: 18px;
+  margin: 25px 0px;
+  color: dimgrey;
+  line-height: 1.5;
+}
+.receptionist_pic {
+  width: 55%;
+  overflow: hidden;
+}
+.receptionist_pic > img {
+  object-fit: contain;
+  max-width: 715px;
+  height: 643px;
+  transform: scale(1.2);
+}
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+.button_container > a,
+.ques_ans > a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #0694a2;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.button_container > a:hover,
+.ques_ans > a:hover,
+.footer_button > .button1:hover {
+  cursor: pointer;
+  background-color: rgba(4, 116, 129, 1);
+}
+.customer-help {
+  display: inline-block;
+  text-align: center;
+  padding: 80px 200px 125px 200px;
+  background-color: rgba(249, 250, 251, 1);
+}
+.customer-help > h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.customer-help > p {
+  font-size: 18px;
+  color: dimgrey;
+  line-height: 1.5;
+}
+.help_catagory {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -40px;
+}
+.help_catogogy_content {
+  display: flex;
+  margin: 0px 50px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+.vip_section {
+  background-color: white;
+  padding: 36px;
+  text-align: center;
+  border-color: rgba(244, 245, 247, var(--border-opacity));
+}
+.vip_section > h1 {
+  color: #d61f69;
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.vip_section > p {
+  font-size: 17px;
+  color: darkslategrey;
+}
+.extra_trail_css {
+  padding-left: 35px;
+  margin-left: 0px;
+  flex-direction: row;
+}
+.extra_content {
+  padding: 50px;
+  width: 50%;
+}
+.extra_content > h1 {
+  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.extra_content > h3 {
+  color: black;
+  line-height: 1.5;
+}
+.extra_content > h3 > span {
+  color: #d61f69;
+}
+.extra_pic {
+  width: 50%;
+  order: -1;
+}
+.extra_botton {
+  justify-content: flex-start;
+}
+.extra_next_content {
+  order: -1;
+}
+.icon {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.icon > svg {
+  width: 50px;
+  height: 50px;
+  stroke: lightslategrey;
+}
+.info_icon {
+  width: 50px;
+  height: 50px;
+}
+.info_icon > svg {
+  width: 50px;
+  stroke: #0e9f6e;
+}
+.telephone_answering_wrapper {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(249, 250, 251, 1);
+}
+.telephone_answering {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 0px 50px 80px;
+}
+.telephone_answering_headline {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0px 40px 0px 0px;
+  width: 30%;
+}
+.telephone_answering_headline > h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+.telephone_answering_content_container {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding-right: 40px;
+}
+.telephone_answering_content {
+  display: flex;
+  flex-direction: row;
+}
+.Custom_greetings {
+  display: flex;
+  margin-bottom: 20px;
+}
+.info {
+  padding: 0px 30px;
+}
+.info > h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0px 20px 0px;
+}
+.info > p {
+  color: darkslategrey;
+  line-height: 1.5;
+}
+.ques_ans {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+.free_consultation {
+  display: flex;
+}
+.consultation_pic {
+  width: 50%;
+}
+.consultation_pic > img {
+  width: 668px;
+  object-fit: cover;
+  height: 100%;
+  max-width: 800px;
+}
+.consultation_form {
+  padding: 50px;
+  background-color: #252f3f;
+}
+.consultation_form > h4 {
+  color: darkgrey;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.consultation_form > h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+.consultation_form > p {
+  font-size: 17px;
+  color: darkgrey;
+  margin-bottom: 35px;
+}
+.input_form {
+  display: block;
+  width: 380px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  margin: 5px 0px 20px 0px;
+}
+label {
+  color: white;
+  font-size: 14px;
+}
+.consultation_form button {
+  font-size: 17px;
+  padding: 10px 20px;
+  outline: none;
+  background-color: white;
+  border-color: white;
+  border-radius: 5px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 100px auto;
+}
+.footer > h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+}
+.footer_button {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+.footer_button > .button1 {
+  display: inline-block;
+  padding: 15px 15px;
+  background-color: #0694a2;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #0694a2;
+}
+.footer_button > .button2 {
+  display: inline-block;
+  padding: 15px 15px;
+  background-color: aliceblue;
+  color: cadetblue;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 10px;
+  border: 1px solid aliceblue;
+}
+.footer_menu {
+  display: inline-block;
+  margin: 15px 0px;
+  font-size: 15px;
+  color: lightslategrey;
+}
+.footer_menu > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer_menu > ul > li {
+  padding: 0px 20px;
+}
+.footer_menu > ul > li:hover {
+  cursor: pointer;
+  color: black;
+}
+.footer_content {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
+  color: grey;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 30px 28px;
+  }
+  .header_logo > img {
+    width: 180px;
+  }
+  .free_trail {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .trail_content {
+    width: 100%;
+  }
+  .trail_content > h1 {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+  .trail_content {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .receptionist_pic {
+    width: 94%;
+    height: 400px;
+  }
+  .receptionist_pic > img {
+    height: 100%;
+    width: 100%;
+  }
+  .customer-help {
+    padding: 30px 50px 100px 50px;
+  }
+  .help_catogogy_content {
+    flex-wrap: wrap;
+    margin: 0px 50px 50px 50px;
+  }
+  .vip_section {
+    width: 37%;
+  }
+  .telephone_answering {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0px 50px 0px;
+    flex-direction: column;
+  }
+  .telephone_answering_headline {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .telephone_answering_content_container {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 10px;
+  }
+  .telephone_answering_headline > h1 {
+    text-align: center;
+  }
+  .free_consultation {
+    flex-wrap: wrap;
+  }
+  .consultation_pic {
+    width: 100%;
+    height: 400px;
+  }
+  .consultation_pic > img {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+  }
+  .info {
+    padding: 0px 15px;
+  }
+  .trail_content {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header {
+    flex-direction: column;
+  }
+  .header_logo {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .toggle_button_container {
+    display: block;
+  }
+  .header_menu {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .auth_button_container {
+    margin-top: 20px;
+  }
+  .header_menu > ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header_menu > ul > li {
+    padding: 20px 0px;
+    width: 100%;
+  }
+  .header_menu > ul > li:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    color: white;
+  }
+  .signin {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid lightslategrey;
+    padding: 12px 15px;
+    outline: none;
+  }
+  .trail_content {
+    padding: 0;
+    width: 82%;
+    margin: 45px auto;
+  }
+  .button_container {
+    justify-content: flex-start;
+  }
+  .receptionist_pic {
+    width: 100%;
+  }
+  .receptionist_pic > img {
+    height: 100%;
+    width: 100%;
+  }
+  .extra_trail_css {
+    padding-left: 0px;
+  }
+  .customer-help {
+    padding: 30px 23px 39px 23px;
+  }
+  .customer-help > h1 {
+    font-size: 32px;
+  }
+  .free_trail {
+    margin-left: 0px;
+  }
+  .help_catogogy_content {
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .vip_section {
+    width: 82%;
+  }
+  .telephone_answering_content {
+    flex-direction: column;
+  }
+  .consultation_form {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 38px;
+  }
+  .consultation_pic {
+    width: 100%;
+    height: 300px;
+  }
+  .input_form {
+    width: 330px;
+  }
+  .footer {
+    padding: 35px;
+  }
+  .footer > h3 {
+    font-size: 30px;
+  }
+  .telephone_answering {
+    padding: 50px 0px 50px 0px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px auto;
+    padding: 0;
+  }
+  .footer_content {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+    color: grey;
+    margin-top: 5px;
+    padding: 28px;
+  }
+}
